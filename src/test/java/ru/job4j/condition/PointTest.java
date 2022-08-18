@@ -39,4 +39,13 @@ public class PointTest {
         double out = point1.distance(point2);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when123to456then4dot24() {
+        double expected = 4.24;
+        Point point1 = new Point(1, 2, 3);
+        Point point2 = new Point(4, 5, 6);
+        double out = point1.distance(point2);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
