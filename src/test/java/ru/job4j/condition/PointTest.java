@@ -41,11 +41,11 @@ public class PointTest {
     }
 
     @Test
-    public void when123to456then4dot24() {
-        double expected = 4.24;
+    public void when123to456then5dot2() {
+        double expected = 5.2;
         Point point1 = new Point(1, 2, 3);
         Point point2 = new Point(4, 5, 6);
-        double out = point1.distance(point2);
+        double out = point1.distance3d(point2);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
